@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: rgb(219, 230, 253);
+}
+h1 {
+  font-size: 3.2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+h2 {
+  font-family: "IBM Plex serif", serif;
+  font-size: 2rem;
+}
+p {
+  margin: 2rem 0;
+  color: rgba(21, 19, 60, 0.5);
+  font-size: 400;
+  font-weight: 1.6rem;
+  display: inline-block;
+}
+span {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-right: 7px;
+}
+.stories-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.stories-div p {
+  font-size: 1.3rem;
+}
+.card {
+  min-width: 25rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  color: #15133c;
+}
+.card-button {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-button a {
+  color: #92b4ec;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.card-button a:last-child {
+  color: red;
+  text-decoration: none;
+}
+form {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+input {
+  padding: 1rem;
+  min-width: 25rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 0.2rempx solid #15133c;
+  outline: none;
+  text-align: center;
+  color:rgb(43, 36, 36)
+}
+.pagination-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:7rem;
+}
+button {
+  padding: 0.8rem 2.2rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #3a9973;
+  color: #ffffff;
+  margin: 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.filter-span {
+  font-size: 1.7rem;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+  
+  color: #15133c;
+  outline: none;
+  border-radius:10px;
+  height:4rem;
+  width:120px;
+  border: none;
+ 
+}
+option{
+  text-align: center;
+}
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+.app-upper-content {
+  display: flex;
+  width:82%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  
+ 
+  
+}
+
+@media screen and (max-width: 1076px) {
+  .app-upper-content
+  {
+    flex-direction: column-reverse;
+  }
+  .pagination-btn{
+    margin-left:0rem;
+    justify-content: space-around;
+  }
+  input {
+   min-width:40rem;
+  }
+  button{
+    font-size: 2rem;
+  }
+   label{
+    font-size: medium;
+    color: #d32121;
+    margin-right:10px;
+   }
+  select {
+    border-radius:15px;
+
+ 
+  }
+  option{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 633px) {
+  input {
+    min-width:30rem;
+   }
+ 
+  button{
+    font-size: 1.5rem;
+  }
+  .pagination-btn{
+    margin-left:0rem;
+    justify-content: space-around;
+  }
+  select {
+    font-size: small;
+    width:100px;
+
+  }
+}
